@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#03AEDA"
+        android:orientation="horizontal">
+        <!-- 图片-->
+        <ImageView
+            android:src="@drawable/note_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/music_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/title"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="40dp"
+            android:text="\n"
+            />
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:src="@drawable/note_icon"
+            android:layout_marginBottom="40dp"
+            />
+    </LinearLayout>
+
+    <!--线性布局2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="40dp"
+            android:text="       账号"
+            />
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入账号" />
+    </LinearLayout>
+
+    <!--线性布局3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="40dp"
+            android:text="       密码"
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入密码" />
+    </LinearLayout>
+
+    <!--线性布局4-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="40dp"
+            android:text="\n    "
+            />
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="登陆"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="login"
+            />
+    </LinearLayout>
+
+    <!--线性布局5-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="40dp"
+            android:text="\n"
+            />
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码" />
+
+        <TextView
+            android:id="@+id/visitorLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助"
+            android:layout_marginLeft="160dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
